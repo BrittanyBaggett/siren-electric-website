@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Siren Electric for expert residential & 
+    commercial electrical services in Bremerton & Kitsap County.">
+    <title>Contact Siren Electric | Bremerton WA Electrician</title>
+     <link rel="canonical" href="https://www.siren-electric.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="icon" type="image/ico" sizes="48x48" href="/favicon-48x48.ico">
+    <style>
+        .logo{
+            display: block;
+            margin: 20px auto;
+            width: 400px;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Electrician",
+        "name": "Siren Electric",
+        "image": "https://www.siren-electric.com/images/logo.png",
+        "description": "Get in touch with Siren Electric, your licensed electrical contractor serving Bremerton, Silverdale, Poulsbo, Bainbridge Island, Port Orchard, and Gig Harbor. Call, email, or visit us for expert commercial and residential electrical solutions.",
+        "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Example Street",
+        "addressLocality": "Bremerton",
+        "addressRegion": "WA",
+        "postalCode": "98312",
+        "addressCountry": "US"
+        },
+        "telephone": "(360)994-1563",
+        "email": "office@siren-electric.com",
+        "url": "https://www.siren-electric.com",
+        "areaServed": ["Bremerton","Silverdale","Poulsbo","Bainbridge Island","Port Orchard","Gig Harbor"],
+        "priceRange": "$$",
+        "openingHours": ["Mo-Fr 08:00-17:00"],
+        "sameAs": [
+        "https://www.facebook.com/SirenElectric",
+        "https://www.instagram.com/SirenElectric"
+        ]
+    }
+</script>
+ <!-- ✅ Unified Google Tag (Analytics + Ads) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J06XRXXV53"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.addEventListener('load', function() {
+    gtag('js', new Date());
+    gtag('config', 'G-J06XRXXV53', { 'anonymize_ip': true });
+    gtag('config', 'AW-17673188449');
+  });
+</script>
+<script>
+// Detect WebP support and apply appropriate background
+function detectWebP() {
+    const canvas = document.createElement('canvas');
+    if (canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0) {
+        // Browser supports WebP
+        document.documentElement.classList.add('webp-supported');
+    } else {
+        // Browser doesn't support WebP
+        document.documentElement.classList.add('no-webp');
+    }
+}
+
+detectWebP();
+</script>
+</head>
+
+<body>
+    <div class = "wrapper-main">
+        <header class = "header-main">
+            <div class = "links">
+                <ul>
+                    <li><a href="https://www.siren-electric.com">Home</a></li>
+                    <li><a href = "https://www.siren-electric.com/about">About Us</a></li>
+                    <li><a href = "https://www.siren-electric.com/service-area">Service Areas</a></li>
+                </ul>
+            </div>
+            <div class = "header-main-logo">
+                <img src="images/white logo.png" alt="Siren Electric logo - licensed electrician in Bremerton WA">
+            </div>
+            <div class = "links">
+                <ul class = "shift-left">
+                    <li><a href = "https://www.siren-electric.com/services">Services</a></li>
+                    <li><a href = "https://www.siren-electric.com/contact">Contact Us</a></li>
+                    <li><a href = "https://www.siren-electric.com/news">News</a></li>
+                </ul>
+            </div> 
+              <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Mobile navigation menu -->
+            <nav class="mobile-nav" id="mobileNav">
+                <ul>
+                    <li><a href="https://www.siren-electric.com">Home</a></li>
+                    <li><a href="https://www.siren-electric.com/about">About Us</a></li>
+                    <li><a href = "https://www.siren-electric.com/service-area">Service Areas</a></li>
+                    <li><a href="https://www.siren-electric.com/services">Services</a></li>
+                    <li><a href="https://www.siren-electric.com/contact">Contact Us</a></li>
+                    <li><a href = "https://www.siren-electric.com/news">News</a></li>
+                </ul>
+            </nav>
+            <div class = "cta-button">
+                <p> Power Up Your Home or Business Today!</p>
+                <p>Call or Text: (360) 994-1563</p>
+            </div>
+        </header>
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const mobileNav = document.getElementById('mobileNav');
+
+            hamburger.addEventListener('click', function() {
+                mobileNav.classList.toggle('active');
+                
+                // Add animation to hamburger lines
+                const spans = hamburger.querySelectorAll('span');
+                if (mobileNav.classList.contains('active')) {
+                    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                    spans[1].style.opacity = '0';
+                    spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+                } else {
+                    spans[0].style.transform = 'rotate(0) translate(0, 0)';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'rotate(0) translate(0, 0)';
+                }
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!hamburger.contains(event.target) && !mobileNav.contains(event.target)) {
+                    mobileNav.classList.remove('active');
+                    const spans = hamburger.querySelectorAll('span');
+                    spans[0].style.transform = 'rotate(0) translate(0, 0)';
+                    spans[1].style.opacity = '1';
+                    
+                    spans[2].style.transform = 'rotate(0) translate(0, 0)';
+                }
+            });
+            </script>
+    <div class = "about-us-line"></div>
+    <div class = "contact-background">
+        <div class = "contact-us">
+            <div class = "contact-white-box"></div>
+            <div class="nested">
+                <div class="contact-us-info">
+                    <h2>Contact Us</h2>
+                    <h1>Get In Touch With Us</h1>
+                    <p>Have questions or need a quote? We’re just a message away. Feel free to call or email us directly.</p>
+                </div>
+
+                <img src="images/contact us/email.png" alt="Email icon representing contact for Siren Electric, serving Bremerton, Silverdale, and Poulsbo, WA" class="email-icon">
+                <ul class="contact-us-list">
+                    <li><strong>Email:</strong><br/> office@siren-electric.com</li>
+                </ul>
+
+                <img src="images/contact us/clock.png" alt="Business hours icon for Siren Electric in Bremerton and Kitsap County" class="clock-icon">
+                <ul class="contact-us-list">
+                    <li><strong>Hours:</strong> <br/>Monday–Friday 8AM–5PM</li>
+                </ul>
+
+                <img src="images/contact us/phone.png" alt="Phone icon for contacting Siren Electric, serving Bremerton, Bainbridge Island, and Kingston, WA" class="phone-icon">
+                <ul class="contact-us-list">
+                    <li><strong>Phone:</strong> <br/>(360)994-1563</li>
+                </ul>
+
+                <img src="images/contact us/location.png" alt="Location icon showing Siren Electric, serving Kitsap County, including Silverdale and Poulsbo" class="location-icon">
+                <ul class="contact-us-list">
+                    <li><strong>Location:</strong> <br/>Based in Bremerton, proudly serving Kitsap County and beyond</li>
+                </ul>
+            </div>
+            <img src = "images/contact us/truck.jpg" alt = "Siren Electric service truck parked in Bremerton, WA" class = "ladder-guy">
+        </div>
+    </div>
+
+    </div>
+    <footer>
+        <div class = "footer-main">
+            <div class="footer-content">
+                <h2 class = "footer-catch-phrase">
+                    Proudly serving Kitsap County with craftsmanship, care, and connection
+                </h2>
+                
+                <img src = "images/white logo.png" alt = "Siren Electric logo in white" class = "footer-logo">
+
+                <div class = "footer-socials">
+                    <a href="https://www.facebook.com/profile.php?id=61579803744451" target="_blank" rel="noopener">
+                        <img src = "images/footer/facebook.png" alt = "Siren Electric Facebook page" class = "social-icon-facebook">
+                    </a>
+                      <a href="https://www.instagram.com/sirenelectric/" target="_blank" rel="noopener">
+                        <img src = "images/footer/instagram.png" alt = "Siren Electric Instagram page" class = "social-icon-instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/company/siren-electric" target="_blank" rel="noopener">
+                        <img src = "images/footer/linkedin.png" alt = "Siren Electric LinkedIn profile" class = "social-icon-linkedin">
+                    </a>
+                </div>
+                <ul class = "footer-services">
+                    <li><a href = "https://www.siren-electric.com/services"><strong>Services</strong></a></li>
+                    <li><a href = "https://www.siren-electric.com/contact"><strong>Contact Us</strong></a></li>
+                    <li><a href = "https://www.siren-electric.com/about"><strong>About Us</strong></a></li>
+                    <li><a href = "https://www.siren-electric.com"><strong>Home</strong></a></li>
+                    <li><a href = "https://www.siren-electric.com/service-area"><strong>Service Areas</strong></a></li>
+                    <li><a href = "https://www.siren-electric.com/News"><strong>News</strong></a></li>
+                    <li></br><strong>License:</strong> </br># SIRENEL751NF</li>
+                </ul>
+                <ul class = "footer-contact-information">
+                    <li><strong>Email:</strong></li>
+                    <li>office@siren-<wbr>electric.com</li>
+                    <li><strong>Phone:</strong></li>
+                    <li>(360)994-1563</li>
+                    <li><strong>Hours:</strong></li>
+                    <li>Monday-Friday</li>
+                    <li>8AM-5PM</li>
+                    
+                </ul>          
+            </div>    
+            <!-- </div> -->
+           <div class = "copyright">
+                <p>&copy; 2025 Siren Electric. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.siren-electric.com/privacy"><i>Privacy Policy</i></a>
+                    <span> | </span>
+                    <a href="https://www.siren-electric.com/terms"><i>Terms & Conditions</i></a>
+                </div>
+        </div> 
+        </div>
+        
+        </footer>
+</body>
+
+
+</html>

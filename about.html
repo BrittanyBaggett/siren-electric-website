@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Siren Electric, a woman-owned electrical company delivering 
+    quality residential & commercial services in Kitsap County.">
+    <title>About Siren Electric | Licensed Electrician in Kitsap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="canonical" href="https://www.siren-electric.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preload the font stylesheet to reduce blocking -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="stylesheet" href="/CSS/main.css">
+    <!-- </noscript> -->
+    <link rel="icon" type="image/ico" sizes="48x48" href="/favicon-48x48.ico">
+    <style>
+        .logo{
+            display: block;
+            margin: 20px auto;
+            width: 400px;
+        }
+    </style>
+         <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Siren Electric",
+    "image": "https://www.siren-electric.com/images/logo.png",
+    "description": "Siren Electric is a woman- and LGBTQ-owned electrical contractor based in Bremerton, WA, serving Kitsap County. We take pride in delivering quality, reliable, and inclusive electrical services for homes and businesses.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Example Street",
+      "addressLocality": "Bremerton",
+      "addressRegion": "WA",
+      "postalCode": "98312",
+      "addressCountry": "US"
+    },
+    "telephone": "(360)994-1563",
+    "email": "office@siren-electric.com",
+    "url": "https://www.siren-electric.com",
+    "areaServed": ["Bremerton","Silverdale","Poulsbo","Bainbridge Island","Port Orchard","Gig Harbor"],
+    "priceRange": "$$",
+    "openingHours": ["Mo-Fr 08:00-17:00"],
+    "sameAs": [
+      "https://www.facebook.com/SirenElectric",
+      "https://www.instagram.com/SirenElectric"
+    ]
+  }
+ <!-- ✅ Unified Google Tag (Analytics + Ads) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J06XRXXV53"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.addEventListener('load', function() {
+    gtag('js', new Date());
+    gtag('config', 'G-J06XRXXV53', { 'anonymize_ip': true });
+    gtag('config', 'AW-17673188449');
+  });
+</script>
+<script>
+// Detect WebP support and apply appropriate background
+function detectWebP() {
+  const canvas = document.createElement('canvas');
+  if (canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0) {
+    // Browser supports WebP
+    document.documentElement.classList.add('webp-supported');
+  } else {
+    // Browser doesn't support WebP
+    document.documentElement.classList.add('no-webp');
+  }
+}
+
+detectWebP();
+</script>
+</head>
+
+
+<body>
+    <div class = "wrapper-main">
+        <header class = "header-main">
+            <div class = "links">
+                <ul>
+                    <li><a href="https://www.siren-electric.com">Home</a></li>
+                    <li><a href = "https://www.siren-electric.com/about">About Us</a></li>
+                    <li><a href = "https://www.siren-electric.com/service-area">Service Areas</a></li>
+                </ul>
+            </div>
+            <div class = "header-main-logo">
+                <img src="images/white logo.png" alt="Siren Electric logo - licensed electrician in Bremerton WA">
+            </div>
+            <div class = "links">
+                <ul class = "shift-left">
+                    <li><a href = "https://www.siren-electric.com/services">Services</a></li>
+                    <li><a href = "https://www.siren-electric.com/contact">Contact Us</a></li>
+                    <li><a href = "https://www.siren-electric.com/news">News</a></li>
+                </ul>
+            </div> 
+              <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Mobile navigation menu -->
+            <nav class="mobile-nav" id="mobileNav">
+                <ul>
+                    <li><a href="https://www.siren-electric.com">Home</a></li>
+                    <li><a href="https://www.siren-electric.com/about">About Us</a></li>
+                    <li><a href = "https://www.siren-electric.com/service-area">Service Areas</a></li>
+                    <li><a href="https://www.siren-electric.com/services">Services</a></li>
+                    <li><a href="https://www.siren-electric.com/contact">Contact Us</a></li>
+                    <li><a href = "https://www.siren-electric.com/news">News</a></li>
+                </ul>
+            </nav>
+            <div class = "cta-button">
+                <p> Power Up Your Home or Business Today!</p>
+                <p>Call or Text: (360) 994-1563</p>
+            </div>
+        </header>            
+        <script>
+            const hamburger = document.getElementById('hamburger');
+            const mobileNav = document.getElementById('mobileNav');
+
+            hamburger.addEventListener('click', function() {
+                mobileNav.classList.toggle('active');
+                
+                // Add animation to hamburger lines
+                const spans = hamburger.querySelectorAll('span');
+                if (mobileNav.classList.contains('active')) {
+                    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+                    spans[1].style.opacity = '0';
+                    spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+                } else {
+                    spans[0].style.transform = 'rotate(0) translate(0, 0)';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'rotate(0) translate(0, 0)';
+                }
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!hamburger.contains(event.target) && !mobileNav.contains(event.target)) {
+                    mobileNav.classList.remove('active');
+                    const spans = hamburger.querySelectorAll('span');
+                    spans[0].style.transform = 'rotate(0) translate(0, 0)';
+                    spans[1].style.opacity = '1';
+                    
+                    spans[2].style.transform = 'rotate(0) translate(0, 0)';
+                }
+            });
+            </script>
+    <div class = "about-us-line"></div>
+
+    <div class = "about-us">
+        <div class = "about-us-text">
+            
+            <h1>About Siren Electric – Licensed Electricians in Bremerton & Kitsap</h1>
+            <p>Siren Electric is a locally owned, family operated business. We take pride in every installation from start 
+                to finish. When you call Siren Electric, you are guaranteed a contractor with the professional expertise, 
+                integrity, and work ethic needed to complete the job. </p>
+
+                <p>At Siren Electric, we believe that great service means more than just flipping a switch—it’s about 
+                communication, honesty, and showing up for our community. When you hire Siren Electric, you’re not just 
+                hiring an electrician—you’re supporting a local business committed to quality, equity, and doing the job 
+                right. </p>
+        </div>
+        <img src = "images/about us/mount rainier.jpg" alt = "Mount Rainier landscape representing Siren Electric’s Washington roots"class = "about-us-landscape">
+        <div class = "landscape-green-box"></div>
+        <!-- <img src = "images/about us/conduit.jpg" alt = "Electrical conduit installation representing Siren Electric craftsmanship" class = "about-us-conduit"> -->
+        <picture class="conduit-picture">
+            <source srcset="images/about us/conduit.webp" type="image/webp">
+            <img src="images/about us/conduit.jpg" alt="Electrical conduit installation representing Siren Electric craftsmanship" class="about-us-conduit">
+        </picture>
+        <div class = "conduit-green-box"></div>
+
+        <div class = "our-vision">
+            <h2>Our Vision</h2>
+            <p>At Siren Electric, our vision is to create a more inclusive, empowered, and electrified future—one project 
+                at a time. We strive to be a trusted name in electrical service throughout Kitsap County by delivering 
+                high-quality workmanship, building meaningful relationships, and setting a new standard for representation 
+                and reliability in the trades.
+                As we grow, we envision a company that not only powers homes and businesses, but also uplifts people—by 
+                supporting equity in the trades, creating career opportunities, and showing that great service comes in all 
+                forms.</p>
+        </div>
+    </div>
+    <div class = "key-pillars">
+        <div class = "key-pillars-text">
+            <h2>Our key pillars</h2>
+            <h3>Company Values</h3>
+        </div>
+        <div class = "pillar-icons respect-pillar">
+            <img src="images/about us/respect.png" alt="Respect and inclusion icon representing Siren Electric company values in Bremerton WA">
+            <h3><i>Respect & Inclusion</i></h3>
+        </div>
+        <div class = "pillar-icons compass-pillar">
+            <img src="images/about us/compass.png" alt="Integrity in action icon for Siren Electric, licensed electrician in Kitsap County">    
+            <h3><i>Integrity in Action</i></h3>
+        </div>
+        <div class = "pillar-icons quality-pillar">
+            <img src="images/about us/tools.png" alt="Quality workmanship icon for Siren Electric services">
+            <h3><i>Quality Workmanship</i></h3>
+        </div>
+        <div class = "pillar-icons safety-vest-pillar">
+            <img src="images/about us/safety vest.png" alt="Safety first icon for Siren Electric electrical services">
+            <h3><i>Safety First</i></h3>
+        </div>
+        <div class = "pillar-icons learning-pillar">
+            <img src="images/about us/brain.png" alt="Lifelong learning icon representing ongoing professional growth at Siren Electric">
+            <h3><i>Lifelong Learning</i></h3>
+        </div>
+    
+    </div>
+    <footer>
+        <div class = "footer-main">
+            <div class="footer-content">
+                <h2 class = "footer-catch-phrase">
+                    Proudly serving Kitsap County with craftsmanship, care, and connection
+                </h2>
+                
+                <img src = "images/white logo.png" alt = "Siren Electric logo in white" class = "footer-logo">
+
+                <div class = "footer-socials">
+                    <a href="https://www.facebook.com/profile.php?id=61579803744451" target="_blank" rel="noopener">
+                        <img src = "images/footer/facebook.png" alt = "Siren Electric Facebook page" class = "social-icon-facebook">
+                    </a>
+                      <a href="https://www.instagram.com/sirenelectric/" target="_blank" rel="noopener">
+                        <img src = "images/footer/instagram.png" alt = "Siren Electric Instagram page" class = "social-icon-instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/company/siren-electric" target="_blank" rel="noopener">
+                        <img src = "images/footer/linkedin.png" alt = "Siren Electric LinkedIn profile" class = "social-icon-linkedin">
+                    </a>
+                </div>
+                <ul class = "footer-services">
+                    <li><a href = "https://www.siren-electric.com/services"><strong>Services</strong></a></li>
+                    <li><a href = "https://www.siren-electric.com/contact"><strong>Contact Us</strong></a></li>
+                    <li><a href = "https://www.siren-electric.com/about"><strong>About Us</strong></a></li>
+                    <li><a href = "https://www.siren-electric.com"><strong>Home</strong></a></li>
+                    <li><a href = "https://www.siren-electric.com/service-area"><strong>Service Areas</strong></a></li>
+                    <li><a href = "https://www.siren-electric.com/News"><strong>News</strong></a></li>
+                    <li></br><strong>License:</strong> </br># SIRENEL751NF</li>
+                </ul>
+                <!-- <a href="services.html" class="to-services">read more</a> -->
+                <ul class = "footer-contact-information">
+                    <li><strong>Email:</strong></li>
+                    <li>office@siren-<wbr>electric.com</li>
+                    <li><strong>Phone:</strong></li>
+                    <li>(360)994-1563</li>
+                    <li><strong>Hours:</strong></li>
+                    <li>Monday-Friday</li>
+                    <li>8AM-5PM</li>
+                    
+                </ul>          
+            </div>    
+            <!-- </div> -->
+           <div class = "copyright">
+                <p>&copy; 2025 Siren Electric. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.siren-electric.com/privacy"><i>Privacy Policy</i></a>
+                    <span> | </span>
+                    <a href="https://www.siren-electric.com/terms"><i>Terms & Conditions</i></a>
+                </div>
+        </div> 
+        </div>
+        
+        </footer>
+</body>
+
+
+</html>

@@ -1,0 +1,7 @@
+/* 
+  Content-Security-Policy: 
+    default-src 'self';
+    script-src 'self' https://maps.googleapis.com https://www.google.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    img-src 'self' data: https:;
+    frame-src 'self' https://www.google.com https://www.googleusercontent.com;
