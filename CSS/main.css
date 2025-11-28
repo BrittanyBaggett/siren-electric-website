@@ -1981,15 +1981,18 @@ p{
 
 .right-column {
     display: flex;
-    align-items: flex-start; /* Changed from center to flex-start */
+    align-items: center; /* Changed from center to flex-start */
     justify-content: center;
 }
 
 /* Map styling */
 .service-area-map {
     width: 100%;
-    position: sticky; /* Optional: makes map stick as you scroll */
     top: 20px;
+}
+
+.service-area-map img{
+    border-radius: 15px;
 }
 
 .map-container {
