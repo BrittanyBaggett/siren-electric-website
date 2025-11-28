@@ -2389,11 +2389,11 @@ p{
 .mt-rainier img{
     margin: 0px 0px 0px 1px;
     z-index: 0;
-    grid-area: 1/1/2/2;
+    grid-column: 1;
+    grid-row: 1;
 }
 .mt-rainier-text{
-    z-index: 1;
-    color: black;    
+    z-index: 1;   
     grid-area: 1/1/2/2;
     justify-self: center;   
     align-self: start;
@@ -2402,6 +2402,7 @@ p{
 }
 .mt-rainier-text h1{
     font-size: 35px;
+    color: black; 
 }
 
 .news-heading{
@@ -2533,8 +2534,6 @@ p{
     margin-bottom: 2rem;
     margin-inline: 2vw;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-
-    
 }
 
 .article-title {
