@@ -235,7 +235,7 @@ p{
     }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1035px){
     .links li a{
         font-size: 18px;
     }
@@ -1432,9 +1432,7 @@ p{
     height: auto;
     border-radius: 15px;
     padding: clamp(15px, 4vw, 20px);
-    /* margin:clamp(20px, 5vw, 40px); */
     margin-inline:clamp(20px, 5vw, 40px);
-    /* margin-bottom: 30px; */
 }
 
 .about-us h1{
@@ -1889,35 +1887,49 @@ p{
     justify-self: end; 
 }
 
-.ladder-guy{
+.truck{
     grid-area: 1/2/3/3;
     z-index: 2;
     align-self: center; 
     justify-self: end;  
     border-radius: 15px;
     max-width: 400px;
-    border: solid 4px black;
+    /* border: solid 4px black; */
 }
 
 
-
-.service-background {
-    background-image: url('../images/contact us/grey power lines.png');
+.service-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/contact us/powerline.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.4; /* Adjust this value: 0 = invisible, 1 = fully visible */
+    z-index: 0;
+}
+.service-background {
+    position: relative;
+    min-height: 600px;
     width: 100%;
     max-width: 1200px;
     margin: 30px auto;
     padding: 25px;
     box-sizing: border-box;
-    z-index: 0;
+    
 }
+
+
 
 /* Header area */
 .service-areas {
     text-align: center;
     margin-bottom: 20px;
+    z-index: 1;
 }
 
 .service-areas h2 {
@@ -1989,29 +2001,11 @@ p{
 .service-area-map {
     width: 100%;
     top: 20px;
+    z-index: 1;
 }
 
 .service-area-map img{
     border-radius: 15px;
-}
-
-.map-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 75%; /* Adjusted aspect ratio */
-    height: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
 }
 
 /* Media queries remain the same */
@@ -2029,7 +2023,15 @@ p{
     .right-column {
         margin-top: 0;
         order: 2;
+        display: flex;
+        justify-content: center;
     }
+    .service-area-map {
+        width: 100%; /* Or set a max-width like 500px */
+        max-width: 600px; /* Adjust as needed */
+        margin-left: 17vw;
+    }
+
 
     .left-column {
         order: 1;
@@ -2046,7 +2048,15 @@ p{
         font-size: 1.2rem;
         padding-left: 5px;
     }
+
 }
+
+@media (max-width: 700px) {
+       .service-area-map {
+        margin-left: 15vw;
+    } 
+}
+
 
 @media (max-width: 600px) {
     .service-areas h2 {
@@ -2068,6 +2078,18 @@ p{
     }
 }
 
+@media (max-width: 550px) {
+       .service-area-map {
+        margin-left: 10vw;
+    } 
+}
+
+@media (max-width: 500px) {
+       .service-area-map {
+        margin-left: 5vw;
+    } 
+}
+
 @media (max-width: 400px) {
     .service-areas h2 {
         font-size: 1.4rem;
@@ -2084,7 +2106,7 @@ p{
 
 /* ___________________________MEDIA CONTACT US__________________________ */
 
-@media (max-width: 704px) {
+@media (max-width: 705px) {
 .contact-us{
     grid-template-columns:minmax(200px,1fr);
     grid-template-rows: auto auto auto; 
@@ -2099,7 +2121,7 @@ p{
     max-width: 700px;
     }
 
-.ladder-guy{
+.truck{
     grid-row: 3;
     grid-column: 1;
     justify-self: center;
@@ -2108,15 +2130,16 @@ p{
     }
 }
 @media (max-width: 746px) {
-    .ladder-guy{
+    .truck{
         width: 330px;
     }
 }
 
 @media (max-width: 846px) {
-    .ladder-guy{
+    .truck{
         max-width: 350px;
         height: auto;
+        
     }
 }
 
