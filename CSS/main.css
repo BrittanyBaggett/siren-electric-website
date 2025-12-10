@@ -699,7 +699,7 @@ p{
     object-fit: cover;
 }
 
-.service-guy-image{
+.outlet-work-image{
     grid-row: 1;
     grid-column: 1;
     margin-top: 15px;
@@ -805,7 +805,7 @@ p{
         margin: 0px;
     }
 
-    .service-guy-image{
+    .outlet-work-image{
         grid-row: 2;
         grid-column: 1;
         padding: 0;
